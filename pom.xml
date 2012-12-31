@@ -48,11 +48,11 @@
   <modules>
     <module>SimpleClient</module>
     <module>SimpleService</module>
-    <module>WrappedSimpleClient</module>
-    <module>WrappedSimpleService</module>
-    <module>Axis2WrappedSimpleService</module>
+    <module>WrappedClient</module>
+    <module>WrappedService</module>
+    <module>Axis2WrappedService</module>
     <module>Axis2SimpleService</module>
-    <module>Axis2WrappedSimpleClient</module>
+    <module>Axis2WrappedClient</module>
     <module>Axis2SimpleClient</module>
   </modules>
 </project>
