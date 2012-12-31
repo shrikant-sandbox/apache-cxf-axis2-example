@@ -48,5 +48,7 @@
   <modules>
     <module>SimpleClient</module>
     <module>SimpleService</module>
+    <module>Axis2SimpleService</module>
+    <module>Axis2SimpleClient</module>
   </modules>
 </project>
