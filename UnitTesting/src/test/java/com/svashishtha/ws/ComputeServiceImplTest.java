@@ -16,6 +16,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
 @ContextConfiguration(locations = { "classpath:beans.xml", "classpath:beans-test.xml" })
+@Ignore
 public class ComputeServiceImplTest extends AbstractJUnit4SpringContextTests {
 	private Bus bus;
 
@@ -32,7 +33,6 @@ public class ComputeServiceImplTest extends AbstractJUnit4SpringContextTests {
 	}
 
 	@Test
-	@Ignore
 	public void testCompute() {
 		ComputeServiceImpl impl = (ComputeServiceImpl) applicationContext
 				.getBean("serviceImpl");

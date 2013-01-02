@@ -24,7 +24,13 @@ public class ComputeService_Service extends Service {
     public final static QName SERVICE = new QName("http://svashishtha.com/ws", "ComputeService");
     public final static QName P1 = new QName("http://svashishtha.com/ws", "p1");
     static {
-        URL url = ComputeService_Service.class.getResource("src/main/resources/ComputeService.wsdl");
+        URL url = null;
+		try {
+			url = new URL("file:src/main/resources/ComputeService.wsdl");
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         if (url == null) {
             java.util.logging.Logger.getLogger(ComputeService_Service.class.getName())
                 .log(java.util.logging.Level.INFO, 
