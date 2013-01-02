@@ -10,13 +10,12 @@ import org.apache.cxf.transport.ConduitInitiatorManager;
 import org.apache.cxf.transport.local.LocalTransportFactory;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
-@ContextConfiguration(locations = { "classpath:beans.xml", "classpath:beans-test.xml" })
-@Ignore
+@ContextConfiguration(locations = { "classpath:beans.xml",
+		"classpath:beans-test.xml" })
 public class ComputeServiceImplTest extends AbstractJUnit4SpringContextTests {
 	private Bus bus;
 
